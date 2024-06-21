@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course</title>
+    <style>
+        body {
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Development Course</h1>
+
+    <h2>HTML Basics</h2>
+    <div>
+        <p style="color: red;">What is a tag?</p>
+        <p style="color: blue;">Anything that is enclosed within angle brackets "&lt;&gt;" is a tag.</p>
+        <p style="color: red;">What is an element?</p>
+        <p style="color: blue;">An element contains a starting tag, content, and an ending tag. <b>Examples: heading elements, paragraph elements, etc.</b></p>
+    </div>
+
+    <h2>Heading Elements</h2>
+    <div>
+        <p><b>HTML</b> provides 6 types of <strong>heading elements</strong>, from h1 to h6. h1 is the highest level and h6 is the lowest level.</p>
+    </div>
+
+    <h2>Paragraph and Button Elements</h2>
+    <div>
+        <p>The paragraph element is used to write paragraphs.</p>
+        <p>The button element defines a button.</p>
+    </div>
+
+    <h2>Lists in HTML</h2>
+    <div>
+        <p style="color: red;">What are the lists in <b>HTML</b>?</p>
+        <p style="color: blue;">In HTML, there are mainly three types of lists:</p>
+
+        <h3>Unordered List (ul)</h3>
+        <p>An unordered list is a collection of related information that does not follow a specific order. It starts with the <b>&lt;ul&gt; element</b> and by default has bullet points.</p>
+        <ul>
+            <b>Chocolates:</b>
+            <li>Dairy Milk</li>
+            <li>Kit Kat</li>
+            <li>5 Star</li>
+            <li>Crunch</li>
+        </ul>
+        <p>The above unordered list uses the default bullet points.</p>
+        <ul type="square">
+            <li>Dairy Milk</li>
+            <li>Kit Kat</li>
+            <li>5 Star</li>
+            <li>Crunch</li>
+        </ul>
+        <p>The above unordered list uses square bullet points.</p>
+        <ul type="circle">
+            <li>Dairy Milk</li>
+            <li>Kit Kat</li>
+            <li>5 Star</li>
+            <li>Crunch</li>
+        </ul>
+        <p>The above unordered list uses circle bullet points.</p>
+
+        <h3>Ordered List (ol)</h3>
+        <p>An ordered list is a collection of related information that follows a specific order. It starts with the <b>&lt;ol&gt; tag</b> and by default uses numbers.</p>
+        <h4>Food Items</h4>
+        <ol>
+            <li>Rice bag</li>
+            <li>1kg oil</li>
+            <li>Pulses</li>
+            <li>Salt (2 kgs)</li>
+        </ol>
+        <p>The above ordered list uses numbers by default.</p>
+        <h4>Food Items</h4>
+        <ol type="i">
+            <li>Rice bag</li>
+            <li>1kg oil</li>
+            <li>Pulses</li>
+            <li>Salt (2 kgs)</li>
+        </ol>
+        <p>The above ordered list uses lowercase Roman numerals.</p>
+        <h4>Food Items</h4>
+        <ol type="A">
+            <li>Rice bag</li>
+            <li>1kg oil</li>
+            <li>Pulses</li>
+            <li>Salt (2 kgs)</li>
+        </ol>
+        <p>The above ordered list uses uppercase letters.</p>
+        <h4>Food Items</h4>
+        <ol type="a" reversed>
+            <li>Rice bag</li>
+            <li>1kg oil</li>
+            <li>Pulses</li>
+            <li>Salt (2 kgs)</li>
+        </ol>
+        <h4>Food Items</h4>
+        <ol start="30" reversed>
+            <li>Rice bag</li>
+            <li>1kg oil</li>
+            <li>Pulses</li>
+            <li>Salt (2 kgs)</li>
+        </ol>
+
+        <h3>Description List (dl)</h3>
+        <dl>
+            <dt>Definition</dt>
+            <dd>The &lt;dl&gt; tag defines a description list. It is used with &lt;dt&gt; (defines terms/names) and &lt;dd&gt; (describes each term/name).</dd>
+        </dl>
+    </div>
+
+    <h2>HTML Table</h2>
+    <div>
+        <p>Using an HTML table, we can store data in a tabular format with rows and columns. The <b>table</b> tag is used to create a table, with <b>tr</b> (table row), <b>td</b> (table data), and <b>th</b> (table header) tags inside.</p>
+
+        <table>
+            <caption><b>Student Data</b></caption>
+            <tr bgcolor="yellow">
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Department</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Shiva Gattu</td>
+                <td>409</td>
+                <td>ECE</td>
+                <td>Secunderabad</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mahesh</td>
+                <td>433</td>
+                <td>ECE</td>
+                <td>Mahbubnagar</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hrithik</td>
+                <td>411</td>
+                <td>ECE</td>
+                <td>Hyderabad</td>
+            </tr>
+        </table>
+        <p>The above table demonstrates the use of different styling properties. The border property value is set to 1, and the table uses the border-collapse property to collapse borders into a single border.</p>
+
+        <div>
+            <h3>HTML Entities</h3>
+            <p>in Html we can't able to write some latter <b>Less than and greter than symboll </b> </p>
+        <p>for that Entities are used & lt ; for less than for grete  than & gt ; no menthon that space between</p>
+        <code>&lt;h1&gt; Main heading &lt;h1&gt;</code>
+        <p>for show the some symbolls </p>
+        <p>copy right symboll <b>&copy;</b> & copy ; (remove  space )</p>
+        
+        <p>Register symboll <b>&reg; </b> & reg ; (remove  space )</p>
+        
+        <p>indian rupy symboll <b>&#8377;</b> &  # 8377 ; (remove  space )</p>
+        <p>&nbsp</p>
+
+        </div>
+        <div>
+         <h3>Anchor Tag</h3>
+         <p>Anchor tag is used to link one webpage to another webpages</p>
+        <b>Syntax</b> <code >&lt;a href="url path" target=""&gt; Link Name&lt;/a&gt;</code>
+        <p>href attribute: Destination of the resource with in the documant or webpage</p>
+        <b>target attribute :</b>The target attribute specifies where to open the linked document. and default _self
+
+        <p>target:_blank => open new tab  &nbsp;_ parent => open  linked doc in the parent frame </p>
+        </div>
+
+        <div>
+            <h3>Image Element</h3>
+            <code >&lt;img src="url path" alt="alternative text" /&gt; </code>
+            <p>Show the image on the webpage</p>
+        </div>
+
+        <div>
+            <p style="color: red;"> what is diffrence between Block level and inline elements </p>
+            <b>Block level Elements</b>: block level elements are starts with new line take up to full width
+            <p><b>Eg :</b> h1, to h6, p, ul, ol, hr, etc  </p> 
+            <b>inline level Elements</b>: inline level elements are does not start with new line its take as much as required width
+            <p><b>Eg :</b> button, img, span, etc  </p>  
+            
+        </div>
+
+        <div>
+            <h3>div and span</h3>
+            <p> <b>div and span </b>both are used for structuring and stylig content</p>
+            <b>div</b> it is block level containers for grouping element
+            <b>span</b> it is inline containers for styling the specific portions fo text 
+        </div>
+  
+        <div>
+            <h3>Form Elements</h3>
+            <b>form :</b> form are used to collect the user inputs and send to the server 
+            <p>form element are </p>
+            <code>&lt; input &gt;  </code>
+            <code>&lt; textarea &gt;  </code>
+            <code>&lt; select &gt;  </code>
+            <h3> input</h3>
+            <code>&lt; input  type=" text " &gt;  </code> for text  &nbsp; <input type="text"><br>
+            <code>&lt; input  type=" password " &gt;  </code> for password yash the text  &nbsp; <input type="password"><br>
+            <code>&lt; input  type=" email " &gt;  </code> for eamil  &nbsp; <input type="email"><br>
+            <code>&lt; input  type="number" &gt;  </code> for numbers  &nbsp; <input type="number"><br>
+            <code>&lt; input  type="submit" &gt;  </code> for submit  &nbsp; <input type="submit" value="submit"><br>
+           <p>type attribute values</p>
+           <code>reset </code> reset the all form data previously Enter data clear<br>
+           <code>redio </code> select only one option<br> name attribute 
+           <code>&lt; input name="gender"  type="radio" &gt;  </code> for seleting   &nbsp; male: <input type="radio" name="gender"">
+           female: <input type="radio" name="gender""><br>
+
+           <code>color </code> color seleting<br>
+           <code>&lt; input  type="range" &gt;  </code> for range seleting  &nbsp; <input type="range"><br>
+
+           <code>&lt; input  type="date" &gt;  </code> for date &nbsp; <input type="date"><br>
+           <code>&lt; input  type="file" &gt;  </code> for file upload  &nbsp; <input type="file"><br>
+           <code>&lt; input  type="search" &gt;  </code> for search  &nbsp; <input type="search"><br>
+           <code>&lt; input  type="time" &gt;  </code> for time &nbsp; <input type="time"><br>
+           <code>&lt; input  type="tel" &gt;  </code> for mobile  &nbsp; <input type="tel"><br>
+        </div>
+
+     <div>
+        <h3>textarea</h3>
+        <p>We send the multiple lines of data we can use text area </p>
+        <code>&lt; textarea  &gt;  the gsjds dkcc  &lt; textarea  /&gt;  </code>   <br>
+  <textarea cols="30" rows="5"></textarea>
+     </div>
+<div>
+    <h3>select</h3>
+    we have to show the multiple of options  for drop down list<br>
+    <select size="">
+        <option value="india" selected>india</option>
+        <option>us</option>
+        <option>canada</option>
+        <option>uk</option>
+        <option>rusia</option>
+        
+        <option>canada</option>
+        <option>uk</option>
+        <option>rusia</option>
+
+        
+
+    </select> 
+    <p>code </p>
+    <code>&lt; select  &gt;  <br>
+        
+        &lt; option &gt; india   &lt; option /&gt;<br>
+        &lt; option &gt; us   &lt; option /&gt;<br>
+        &lt; option &gt; uk   &lt; option /&gt;<br>
+        &lt; option &gt; chaina  &lt; option /&gt;<br>
+        &lt; select /&gt;  </code> 
+</div>
+    </div>
+</body>
+</html>
